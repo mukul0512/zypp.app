@@ -27,19 +27,12 @@ const Navbar = () => {
                 <li><Link to="/advertising" style={linkStyle}>ADVERTISING</Link></li>
                 <li><Link to="/environment" style={linkStyle}>ENVIRONMENT</Link></li>
                 <li>
-                    <span style={linkStyle}>Services</span>
-                    <ul style={{
-                        position: 'absolute',
-                        top: '100%',
-                        left: 0,
-                        listStyle: 'none',
-                        padding: '10px',
-                        display: 'none'
-                    }}>
-                        <li><Link to="/ev-deliveries" style={linkStyle}>EV deliveries</Link></li>
-                        <li><Link to="/last-mile-deliveries" style={linkStyle}>Last Mile Deliveries</Link></li>
-                        <li><Link to="/3w-cargo" style={linkStyle}>3W Cargo</Link></li>
-                    </ul>
+                    <select defaultValue="">
+                        <option value="">SERVICES</option>
+                        <option value="evDeliveries">evDeliveries</option>
+                        <option value="lastMileDeliveries">lastMileDel.</option>
+                        <option value="3wCargo">3wCargo</option>
+                    </select>
                 </li>
                 <li><Link to="/blog" style={linkStyle}>BLOG</Link></li>
                 <li><Link to="/esg" style={linkStyle}>ESG</Link></li>
